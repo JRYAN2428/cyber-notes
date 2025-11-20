@@ -1,44 +1,7 @@
-# HTTP in Detail — Notes
-
-## What HTTP Is
-HTTP (HyperText Transfer Protocol) is the application-layer protocol that defines:
-- how clients send requests
-- how servers send responses
-- how browsers, APIs, and tools like curl communicate
-
----
-
-## HTTP Request Structure
-A request has:
-- **Method** (GET, POST, etc.)
-- **Path/URL**
-- **Version**
-- **Headers**
-- **Optional Body** (POST/PUT/PATCH)
-
-Example:
-GET /index.html HTTP/1.1
-Host: example.com
-User-Agent: curl/7.68.0
-Accept: */*
-
----
-
-## HTTP Response Structure
-A response has:
-- **Status line** (status code + message)
-- **Headers**
-- **Body**
-
-Example:
-HTTP/1.1 200 OK
-Content-Type: text/html
-Content-Length: 1265
-
----
-
-## Notes From TryHackMe Room
-Write your room notes here:
-
-- 
-- 
+# HTTP in detail
+## What is HTTP? (HyperText Transfer Protocol)
+- Used when visiting websites
+- set of rules used for communicating with web servers to transmit data for webpages, and additional information like HTML, Images
+    - Or even query parameters, headers, cookies, and form data.
+        - Additionally, authentication tokens, session IDs, and cache directives.
+        - HTTP can be used to pass metadata requests and responses; content types, content lengths, encoding information.

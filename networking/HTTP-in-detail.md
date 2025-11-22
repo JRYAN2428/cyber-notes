@@ -73,18 +73,18 @@ Common HTTP Status Codes:
 # Headers
 Additional bits of data that you _can_ send to the web server when making requests
 
-**HOST:** Web servers can host multiple websites, host headers specify the domain name of the server you're trying to reach. Client > HTTP request > Server: Domain? ?HTTP request encompasses Host Header > Send There
-**User-Agent:** Browser Software & Version Number > Tells Wbeserver your browser software > helps format website for browser client; some elements of HTML, JavaScript and CSS only available in certain browsers.
-**Content Length:** Sending data such as a form (POST), content length describes how much data is expected in web request; validates integrity of data
-**Accept Encoding** Web server is told of compression methods applicable to browser, handle smaller amount od data over internet
-**Cookie** Data sent to the server which holds information
+- **HOST:** Web servers can host multiple websites, host headers specify the domain name of the server you're trying to reach. Client > HTTP request > Server: Domain? ?HTTP request encompasses Host Header > Send There
+- **User-Agent:** Browser Software & Version Number > Tells Wbeserver your browser software > helps format website for browser client; some elements of HTML, JavaScript and CSS only available in certain browsers.
+- **Content Length:** Sending data such as a form (POST), content length describes how much data is expected in web request; validates integrity of data
+- **Accept Encoding** Web server is told of compression methods applicable to browser, handle smaller amount od data over internet
+- **Cookie** Data sent to the server which holds information
 
 ## Common Response Headers
-Client > Server > Client
-**Set Cookie** Information to store content of response in browser cache
-**Cache control:** Length of cache storage in browser
-**Content Type** Type of data being returned; HTML, CSS, JavaScript, Images, PDF, Video. Content Type header > Browser understands how to process it
-**Content Encoding:** method used to compress data to make it smaller when sending over internet
+- Client > Server > Client
+- **Set Cookie** Information to store content of response in browser cache
+- **Cache control:** Length of cache storage in browser
+- **Content Type** Type of data being returned; HTML, CSS, JavaScript, Images, PDF, Video. Content Type header > Browser understands how to process it
+- **Content Encoding:** method used to compress data to make it smaller when sending over internet
 
 
 

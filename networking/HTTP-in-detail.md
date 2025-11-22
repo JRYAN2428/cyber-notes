@@ -39,4 +39,52 @@ Accessing a website requires:
 
 # HTTP Methods
 
+There are various methods of intention by the client:
+- Get Request
+    - Used for extracting information
+- POST Request
+    - Submitting data to a web server; potentially creating new records
+- PUT Request
+    - Submitting data to web server to update information
+- DELETE Request
+    - Deleting information and records from a web server
+
+# HTTP Status Codes
+When a HTTP responds, they respod with a status code:
+- 100-199 Information Response; first part of request recieved, send rest of request (Not used much anymore)
+- 200-299 Success; Tells client request was successful
+- 300-399 Redirection; Used to redirect client request to different webpage/webserver
+- 400-499 Client Errors; Informs client of error in request
+- 500-599 Server Errors; Errors that happen on the server side (Generally a major problem for the server handling the request)
+
+Common HTTP Status Codes:
+- 200; OK
+- 201; Created
+- 301; Moved permanently; redirect client browser to new webpage, or tells earch engines that page moved look elsewhere
+- 302; Found; Temporary change
+- 400; Bad Request; Something wrong or missing in request, web server may be expecting precise parameter, or formatting that client didn't send
+- 401; Not authorised: Potentially need a login or security clearance
+- 403: Forbidden: No permission to view regardless
+- 405; Method Not Allowed: resource doesn't allow a GET request to resource of create account which would be expecting a POST request
+- 404: Page not Found: Page/resource requested does not exist
+- 500; Internal Service Error: Server encountered error that it doesn't understand
+- 503; Service Unavailble: Server couldn't handle request; overloaded or down
+
+# Headers
+Additional bits of data that you _can_ send to the web server when making requests
+
+**HOST:** Web servers can host multiple websites, host headers specify the domain name of the server you're trying to reach. Client > HTTP request > Server: Domain? ?HTTP request encompasses Host Header > Send There
+**User-Agent:** Browser Software & Version Number > Tells Wbeserver your browser software > helps format website for browser client; some elements of HTML, JavaScript and CSS only available in certain browsers.
+**Content Length:** Sending data such as a form (POST), content length describes how much data is expected in web request; validates integrity of data
+**Accept Encoding** Web server is told of compression methods applicable to browser, handle smaller amount od data over internet
+**Cookie** Data sent to the server which holds information
+
+## Common Response Headers
+Client > Server > Client
+**Set Cookie** Information to store content of response in browser cache
+**Cache control:** Length of cache storage in browser
+**Content Type** Type of data being returned; HTML, CSS, JavaScript, Images, PDF, Video. Content Type header > Browser understands how to process it
+**Content Encoding:** method used to compress data to make it smaller when sending over internet
+
+
 

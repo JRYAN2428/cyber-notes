@@ -10,4 +10,13 @@
 - JavaScript; Implement complex features, user interactivity
 
 HTML = HyperText Markup Lnaguage
-- Is the **
+- Is the language websites are written in
+- Elements = tags; vice versa; > Building blocks of HTML pages > Tells browser how to display content
+
+**HTML STRUCTURE:**
+- <!DOCTYPE html> defines the page as HTML5 doc. Standardisation
+- <html> element/tag > root element of HTML page - ALL other elements/tags come after this element
+- <head> element/tag contains information about the page like page title
+- <body> defines HTML doc body; only content inside of the body is shown in the browser
+- <p> defines a paragraph
+There are many other elements/tags******

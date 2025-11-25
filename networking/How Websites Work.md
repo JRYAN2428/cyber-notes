@@ -1,6 +1,6 @@
 # How Websites Work
 
-Completed:25/11/2025
+Completed: 25/11/2025
 
 ## **Two major components of a website**
 - The **Front End** (Client side); how the browser looks at the website

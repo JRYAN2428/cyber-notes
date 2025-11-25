@@ -21,6 +21,27 @@ HTML = HyperText Markup Lnaguage
 - <p> defines a paragraph
 There are many other elements/tags
 ### Tags can also:
-- Have a class attribute > <p class="bold-text">
-- Have an src attribute (specifies location of image); <img src="img/cat.jpg">
-  - src specifies **_location of the image relative to the HTML document. <img src="img/cat.jpg"> indicates the image 'cat.jpg' is located in an 'img' folder_**
+- Have a class attribute > ```<p class="bold-text">```
+- Have an src attribute (specifies location of image); ```<img src="img/cat.jpg">```
+  - src specifies **_location of the image relative to the HTML document. ```<img src="img/cat.jpg">``` indicates the image 'cat.jpg' is located in an 'img' folder_**
+- Have an 'id' attribute ```<p id="example">```, becomes unique to the element. Elements need different id's to identify them uniquely. Often used for styling and to identigy it by JavaScript
+
+
+---
+
+
+# **Example Code**
+
+```<!DOCTYPE html>
+<html>
+    <head>
+        <title>TryHackMe HTML Editor</title>
+    </head>
+    <body>
+        <h1>Cat Website!</h1>
+        <p>See images of all my cats!</p>
+        <img src='img/cat-1.jpg'>
+        <img src='img/cat-2.'>
+        <!-- Add dog image here -->
+    </body>
+</html>```

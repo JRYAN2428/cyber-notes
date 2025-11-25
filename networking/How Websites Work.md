@@ -1,5 +1,7 @@
 # How Websites Work
 
+Completed:25/11/2025
+
 ## **Two major components of a website**
 - The **Front End** (Client side); how the browser looks at the website
 - The **Back End** (Server side); server processes request > returns response

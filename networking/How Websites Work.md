@@ -32,6 +32,8 @@ There are many other elements/tags
 
 # **Example Code**
 
+## Adding Images
+
 ```<!DOCTYPE html>
 <html>
     <head>
@@ -44,4 +46,57 @@ There are many other elements/tags
         <img src='img/cat-2.'>
         <!-- Add dog image here -->
     </body>
-</html>```
+</html>
+```
+
+## Adding buttons
+
+```<!DOCTYPE html>
+<html>
+<button onclick='document.getElementById("demo").innerHTML = "Button Clicked";'>Click Me!</button>
+    <head>
+        <title>TryHackMe Editor</title>
+    </head>
+    <body>
+        <div id="demo">Hi there!</div>
+        <script type="text/javascript">
+            // add your JavaScript here
+        </script>
+    </body>
+</html>
+```
+
+---
+
+# Sensitive Data Exposure
+- Occurs when websites don't properly remove clear-text information to the end user; usually found in frontend source code
+- Page source can have data like login credentials, private links, or other things
+- Can leverage source code information for data to use in other applications, to then get further access and exploits
+
+## HTML Injection
+- Vulnerability when the website doesn't sanitise information inputted from the user
+- Can therefore 'inject' malicious code
+- HTML injection is Client side
+
+# My custom script for tutorial
+
+## Self Dive
+- The <a> tag is used to create hyperlinks
+- The 'href' attribute specifies the URL of the page link goes to
+---
+```<HTML>
+  <script
+    <a href='http://hacker.com'>Click here</a>
+</HTML>
+```
+The above version is incorrect; the correct version below
+```<html>
+  <body>
+    <a href='http://hacker.com'>Click here</a></body></html>
+```
+
+
+
+  
+
+

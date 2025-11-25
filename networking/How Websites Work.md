@@ -19,4 +19,8 @@ HTML = HyperText Markup Lnaguage
 - <head> element/tag contains information about the page like page title
 - <body> defines HTML doc body; only content inside of the body is shown in the browser
 - <p> defines a paragraph
-There are many other elements/tags******
+There are many other elements/tags
+### Tags can also:
+- Have a class attribute > <p class="bold-text">
+- Have an src attribute (specifies location of image); <img src="img/cat.jpg">
+  - src specifies **_location of the image relative to the HTML document. <img src="img/cat.jpg"> indicates the image 'cat.jpg' is located in an 'img' folder_**

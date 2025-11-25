@@ -85,6 +85,36 @@ Additional bits of data that you _can_ send to the web server when making reques
 - **Cache control:** Length of cache storage in browser
 - **Content Type** Type of data being returned; HTML, CSS, JavaScript, Images, PDF, Video. Content Type header > Browser understands how to process it
 - **Content Encoding:** method used to compress data to make it smaller when sending over internet
+# Cookies
+- Data which is stored locally on the computer
+- Saved when receiving "Set-Cookie" Header from web server
+- Each further requests sends cookie data back to web server
+- HTTP is **_STATELESS_** (doesn't track previous requests), cookies remind the web server of who you are, including personal settings
+**Making Requests**
+code
+GET /room HTTP/1.1
+****Output:**
+
+HTTP/1.1 200 Ok
+Server: nginx/1.15.8
+Tue, 25 Nov 2025 15:17:1 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 252
+Last-Modified: Tue, 25 Nov 2025 15:17:1 GMT
+
+<html>
+<head>
+    <title>TryHackMe</title>
+</head>
+<body>
+    Welcome to the Room page THM{YOU'RE_IN_THE_ROOM}
+</body>
+</html>
+
+
+---
+
+
 
 
 
